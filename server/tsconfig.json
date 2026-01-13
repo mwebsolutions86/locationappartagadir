@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    /* Modules */
+    "target": "es2020",
+    "module": "commonjs",                  /* Node.js utilise CommonJS par défaut */
+    "moduleResolution": "node",            /* Indispensable pour Node */
+    "esModuleInterop": true,               /* Permet d'utiliser 'import' avec Express */
+    
+    /* Structure */
+    "rootDir": "./src",
+    "outDir": "./dist",
+    
+    /* Strictness & Safety */
+    "strict": true,
+    "verbatimModuleSyntax": false,         /* <--- C'EST CA QUI BLOQUAIT (On le désactive) */
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*", "../client/pages"],
+  "exclude": ["node_modules"]
+}
